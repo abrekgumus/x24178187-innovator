@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MagnoZest | Feel the Earth</title>
+    <link rel="icon" href="https://img.icons8.com/fluency/48/magnet.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --desert-orange: #E67E22;
+            --lemon-yellow: #F1C40F;
+            --steel-silver: #BDC3C7;
+            --charcoal: #2C3E50;
+            --background: #FDFEFE;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--background); color: var(--charcoal); line-height: 1.6; overflow-x: hidden; }
+
+        header {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1509316785289-025f54846b43?auto=format&fit=crop&q=80&w=1600') center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 2rem;
+        }
+
+        h1 { font-size: 5rem; font-weight: 900; letter-spacing: -2px; margin-bottom: 1rem; text-transform: uppercase; }
+        .tagline { font-size: 1.5rem; font-weight: 300; max-width: 600px; font-style: italic; font-family: 'Playfair Display', serif; }
+
+        .section { padding: 8rem 2rem; max-width: 1200px; margin: 0 auto; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+
+        .feature-img { width: 100%; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+
+        .accent-text { color: var(--desert-orange); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem; margin-bottom: 1rem; display: block; }
+        h2 { font-size: 3rem; margin-bottom: 1.5rem; line-height: 1.1; }
+
+        .cta-button {
+            margin-top: 2rem;
+            padding: 1.2rem 2.5rem;
+            background-color: var(--lemon-yellow);
+            color: var(--charcoal);
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 50px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            display: inline-block;
+        }
+        .cta-button:hover { transform: scale(1.05); background-color: #f39c12; }
+
+        .lemon-aura {
+            background: linear-gradient(135deg, #fff9c4 0%, #fffde7 100%);
+            padding: 4rem;
+            border-radius: 30px;
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        footer { padding: 4rem 2rem; background: var(--charcoal); color: var(--steel-silver); text-align: center; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>MagnoZest</h1>
+        <p class="tagline">Navigate the invisible. Feel the subterranean. Master the desert.</p>
+        <a href="#about" class="cta-button">Experience the Haptic Revolution</a>
+    </header>
+
+    <section id="about" class="section">
+        <div class="grid">
+            <div>
+                <span class="accent-text">The Problem</span>
+                <h2>Sensory Drift in the Karakum.</h2>
+                <p>Surveying the vast, magnetic anomalies of Turkmenistan is a visual nightmare. High glare and featureless terrain lead to mapping errors that cost millions.</p>
+                <p style="margin-top: 1rem;">We've turned data into sensation. Don't just look at the screen. Feel the minerals beneath your feet.</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?auto=format&fit=crop&q=80&w=800" class="feature-img" alt="Desert landscape">
+        </div>
+    </section>
+
+    <section class="section" style="background-color: #f8f9fa;">
+        <div class="grid" style="grid-template-columns: 1fr 1.2fr;">
+            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800" class="feature-img" alt="Haptic Technology">
+            <div>
+                <span class="accent-text">The Technology</span>
+                <h2>Haptic-M & Zest-Aura.</h2>
+                <p>The MagnoZest V1 utilizes a proprietary 64-zone magnetic induction array that translates subterranean density into physical resistance.</p>
+                <div class="lemon-aura">
+                    <h3 style="color: #f39c12; margin-bottom: 0.5rem;">Zest-Aura™ Stress Mitigation</h3>
+                    <p>Infused with micro-encapsulated lemon terpenes, the device releases a calming, focus-sharpening aroma when it detects surveyor fatigue.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <span class="accent-text">The Impact</span>
+            <h2>Precision Reimagined.</h2>
+            <p style="font-size: 1.2rem;">35% Reduction in mapping errors. 50% Decrease in cognitive fatigue. 100% Intuitive.</p>
+            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=1200" class="feature-img" style="margin-top: 3rem;" alt="Surveying team">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Karakum Haptics Ltd. | Built for the Explorers.</p>
+    </footer>
+
+</body>
+</html>

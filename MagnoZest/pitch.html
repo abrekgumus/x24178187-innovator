@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MagnoZest Pitch Deck</title>
+    <link rel="icon" href="https://img.icons8.com/fluency/48/magnet.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --desert: #E67E22;
+            --lemon: #F1C40F;
+            --steel: #BDC3C7;
+            --void: #1a1a1a;
+            --text: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: var(--void); color: var(--text); overflow: hidden; }
+
+        .slide {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10%;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            scroll-snap-align: start;
+            overflow: hidden;
+        }
+
+        .slide-container {
+            height: 100vh;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        h1 { font-size: 8rem; font-weight: 900; line-height: 0.9; text-transform: uppercase; margin-bottom: 2rem; }
+        .hero-num { font-size: 12rem; font-weight: 900; color: var(--lemon); line-height: 1; }
+        .statement { font-size: 3.5rem; font-weight: 300; line-height: 1.2; border-left: 10px solid var(--lemon); padding-left: 2rem; }
+
+        .data-viz {
+            display: flex;
+            gap: 2rem;
+            margin-top: 3rem;
+            align-items: flex-end;
+            height: 300px;
+        }
+
+        .bar {
+            background: var(--desert);
+            width: 80px;
+            transition: height 1s ease-out;
+            border-radius: 10px 10px 0 0;
+            position: relative;
+        }
+
+        .bar::after {
+            content: attr(data-label);
+            position: absolute;
+            bottom: -30px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+        .revealed { opacity: 1; transform: translateY(0); }
+
+        .lessons-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            font-size: 1.2rem;
+        }
+
+        .lessons-list li {
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 15px;
+            border-left: 5px solid var(--lemon);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="slide-container">
+        
+        <!-- Slide 1: Hero -->
+        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?auto=format&fit=crop&q=80&w=1600')">
+            <div class="overlay"></div>
+            <div class="content">
+                <span style="color: var(--lemon); font-weight: 700; text-transform: uppercase; letter-spacing: 5px;">Karakum Haptics Presents</span>
+                <h1>Magno<br>Zest</h1>
+                <p style="font-size: 1.5rem; letter-spacing: 2px;">FEEL THE SUBTERRANEAN PULSE</p>
+            </div>
+        </div>
+
+        <!-- Slide 2: The Problem -->
+        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1509316785289-025f54846b43?auto=format&fit=crop&q=80&w=1600')">
+            <div class="overlay" style="background: rgba(230, 126, 34, 0.7);"></div>
+            <div class="content">
+                <p class="statement reveal">Traditional surveying is failing in high-magnetic environments.</p>
+                <div class="data-viz reveal" style="margin-top: 5rem;">
+                    <div class="bar" style="height: 80%; background: #fff;" data-label="Current Error Rate"></div>
+                    <div class="bar" style="height: 25%; background: var(--lemon);" data-label="MagnoZest Target"></div>
+                    <p style="align-self: center; font-size: 2rem; font-weight: 700;">-65% ERROR REDUCTION</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: The Market -->
+        <div class="slide">
+            <div class="content">
+                <span class="hero-num reveal">$14.2B</span>
+                <p class="statement reveal">The untapped mineral potential of the Karakum Desert.</p>
+                <p class="reveal" style="margin-top: 2rem; font-size: 1.5rem; color: var(--lemon);">We are the key to the lock.</p>
+            </div>
+        </div>
+
+        <!-- Slide 4: The Solution -->
+        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1600')">
+            <div class="overlay"></div>
+            <div class="content">
+                <h1>Haptic-M</h1>
+                <p class="statement">Don't just look at data. <strong>Grip it.</strong></p>
+            </div>
+        </div>
+
+        <!-- Slide 5: Traction -->
+        <div class="slide" style="background: var(--lemon); color: var(--void);">
+            <div class="content">
+                <span class="hero-num" style="color: var(--void);">35%</span>
+                <p class="statement" style="border-color: var(--void);">Faster site characterization in pilot tests.</p>
+                <p style="font-size: 2rem; margin-top: 2rem; font-weight: 900;">LIVE IN 2027.</p>
+            </div>
+        </div>
+
+        <!-- Slide 6: Lessons Learned -->
+        <div class="slide" style="background: #2c3e50;">
+            <div class="content">
+                <h2 style="font-size: 4rem; margin-bottom: 2rem;">Lessons Learned</h2>
+                <ul class="lessons-list">
+                    <li class="reveal"><strong>Constraint Breeds Innovation:</strong> Weird parameters (Koalas in deserts) force non-linear thinking.</li>
+                    <li class="reveal"><strong>Multisensory Design:</strong> Solving for sight (glare) required engaging touch and smell.</li>
+                    <li class="reveal"><strong>Context is King:</strong> A product for Turkmenistan needs unique local considerations (heat, Soviet tech history).</li>
+                    <li class="reveal"><strong>Haptics > Visuals:</strong> In high-stress environments, tactile feedback is more resilient than LCDs.</li>
+                    <li class="reveal"><strong>Stress as a Signal:</strong> Using GSR to trigger olfactory relief (Lemon) adds a wellness layer to industrial tools.</li>
+                    <li class="reveal"><strong>Storytelling as Strategy:</strong> The narrative of Kurban the Koala led directly to the haptic chess-grid interface.</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const observerOptions = {
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.querySelectorAll('.reveal').forEach(el => {
+                        el.classList.add('revealed');
+                    });
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.slide').forEach(slide => {
+            observer.observe(slide);
+        });
+    </script>
+</body>
+</html>

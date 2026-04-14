@@ -1,0 +1,3 @@
+**Research Focus:** Mineral exploration and geological surveying in the Karakum Desert (Turkmenistan) often involve navigating intense magnetic anomalies that interfere with standard digital equipment. Field researchers often experience "sensory drift" and cognitive fatigue due to the repetitive, visual-only data monitoring in high-glare, featureless landscapes.
+
+**Problem Statement:** Independent geological survey teams and mineral exploration startups in Central Asia lack intuitive, non-visual feedback systems to interpret subterranean magnetic data in real-time, leading to a 35% increase in mapping errors and significant physical fatigue during long-duration field missions.

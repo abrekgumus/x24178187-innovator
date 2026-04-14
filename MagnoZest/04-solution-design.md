@@ -1,0 +1,3 @@
+**Solution:** A hybrid hardware-software system.
+**Offering:** The **MagnoZest Haptic Mapper** is a handheld induction-haptic device. It uses "Magnetic Resistance Feedback" to allow surveyors to "feel" the density and depth of underground mineral deposits. The grip is made of a bio-polymer infused with encapsulated lemon-oil micro-beads, which release a scent upon high-stress detection (via skin conductance sensors) to improve focus and reduce heat-induced nausea.
+**Provider:** **Karakum Haptics Ltd.** (A deep-tech startup based in Ashgabat and Melbourne).
