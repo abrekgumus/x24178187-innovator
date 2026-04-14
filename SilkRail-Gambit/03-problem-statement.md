@@ -1,0 +1,3 @@
+**Research Focus:** The Trans-Caspian international transport route faces severe bottlenecks in Turkmenistan. Traditional rail infrastructure frequently fails due to shifting desert sands and extreme heat warping the tracks, causing massive delays in transcontinental freight.
+
+**Problem Statement:** Global logistics conglomerates operating across the Central Asian Silk Road lack a reliable, high-speed overland transport mechanism that can dynamically adapt to the rapidly changing, harsh geological conditions of the Karakum Desert, resulting in a 40% delay rate for time-sensitive cargo.

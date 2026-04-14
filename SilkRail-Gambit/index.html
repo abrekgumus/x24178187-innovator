@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SilkRail Gambit | Grandmaster Logistics</title>
+    <link rel="icon" href="https://img.icons8.com/ios-filled/50/000000/train.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;900&family=Cinzel:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --marble-white: #F5F5F5;
+            --obsidian: #0B0C10;
+            --desert-sand: #EDC9AF;
+            --highlight: #45A29E;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Montserrat', sans-serif; background-color: var(--marble-white); color: var(--obsidian); line-height: 1.6; }
+
+        header {
+            height: 100vh;
+            background: linear-gradient(to right, rgba(11, 12, 16, 0.9), rgba(11, 12, 16, 0.3)), url('https://images.unsplash.com/photo-1541888000438-66222b07e71c?auto=format&fit=crop&q=80&w=1600') center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 10%;
+            color: var(--marble-white);
+        }
+
+        .title-font { font-family: 'Cinzel', serif; }
+        h1 { font-size: 5rem; letter-spacing: 2px; margin-bottom: 1rem; text-transform: uppercase; }
+        .tagline { font-size: 1.5rem; font-weight: 300; max-width: 600px; color: var(--desert-sand); margin-bottom: 2rem; border-left: 4px solid var(--highlight); padding-left: 1rem; }
+
+        .cta-button {
+            padding: 1rem 3rem;
+            background-color: var(--obsidian);
+            color: var(--marble-white);
+            border: 2px solid var(--desert-sand);
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            display: inline-block;
+            width: max-content;
+        }
+        .cta-button:hover { background-color: var(--desert-sand); color: var(--obsidian); }
+
+        .section { padding: 8rem 10%; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+        .section-alt { background-color: var(--obsidian); color: var(--marble-white); }
+
+        h2 { font-size: 3rem; margin-bottom: 1.5rem; font-family: 'Cinzel', serif; }
+        p { font-size: 1.1rem; margin-bottom: 1.5rem; }
+
+        .feature-img { width: 100%; height: 500px; object-fit: cover; border-radius: 4px; filter: grayscale(20%) sepia(20%); }
+
+        .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem; }
+        .stat-box { border-top: 3px solid var(--highlight); padding-top: 1rem; }
+        .stat-num { font-size: 3rem; font-weight: 900; color: var(--desert-sand); }
+
+        .detail-box { background: rgba(255,255,255,0.05); padding: 2rem; border-left: 4px solid var(--desert-sand); margin-top: 2rem; }
+
+        footer { padding: 3rem 10%; background: var(--obsidian); color: var(--desert-sand); border-top: 1px solid rgba(237, 201, 175, 0.2); text-align: center; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <span style="letter-spacing: 5px; text-transform: uppercase; font-size: 0.9rem; margin-bottom: 1rem;">Ashgabat Kinetic Transit</span>
+        <h1 class="title-font">SilkRail Gambit</h1>
+        <p class="tagline">Outmaneuvering the desert. A chess-engine driven Maglev logistics network for the modern Silk Road.</p>
+        <a href="#strategy" class="cta-button">View Strategy</a>
+    </header>
+
+    <section id="strategy" class="section">
+        <div>
+            <h2>The Karakum Bottleneck</h2>
+            <p>Traditional rail fails in Turkmenistan. Shifting sands and warping tracks from 50°C heat cause a 40% delay in transcontinental freight.</p>
+            <p>We approach the desert not as a barrier, but as a chessboard. The SilkRail Gambit utilizes redundant magnetic levitation tracks, allowing freight pods to float above the hazards.</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1549429186-b4859f518e38?auto=format&fit=crop&q=80&w=800" class="feature-img" alt="Desert Rail Concept">
+    </section>
+
+    <section class="section section-alt">
+        <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=800" class="feature-img" style="filter: none;" alt="AI Chess Concept">
+        <div>
+            <h2 style="color: var(--desert-sand);">Grandmaster AI Routing</h2>
+            <p>Our pods don't follow a fixed schedule. They are dynamically routed by an AI trained on chess heuristics. It anticipates sandstorms and thermal spikes 10 "moves" ahead, switching tracks instantly to maintain maximum velocity.</p>
+            
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-num">0%</div>
+                    <div>Friction Delay</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-num">400<span style="font-size:1.5rem">km/h</span></div>
+                    <div>Cruising Speed</div>
+                </div>
+            </div>
+
+            <div class="detail-box">
+                <h4 style="margin-bottom: 0.5rem; color: var(--highlight);">Engineering Details</h4>
+                <p style="font-size: 0.9rem; margin-bottom: 0;">Our "Knight-Class" pods employ citric-acid (lemon) bio-coolants to protect superconducting magnets from desert heat, backed by our fail-safe "Koala" mechanical rail-grippers for total cargo security.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Ashgabat Kinetic Transit | The New Silk Road is Magnetic.</p>
+    </footer>
+
+</body>
+</html>
