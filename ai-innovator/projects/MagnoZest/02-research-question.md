@@ -1,0 +1,1 @@
+"To what extent does the integration of magnetic-force-feedback (Haptic-M) in tactile strategy interfaces enhance cognitive spatial mapping and decision-making resilience for personnel operating in sensory-deprived, arid environments?"
