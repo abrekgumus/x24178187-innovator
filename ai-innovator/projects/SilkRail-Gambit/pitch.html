@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SilkRail Gambit | Pitch Deck</title>
+    <link rel="icon" href="https://img.icons8.com/ios-filled/50/000000/train.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;900&family=Cinzel:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --obsidian: #0B0C10;
+            --marble: #F5F5F5;
+            --sand: #EDC9AF;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Montserrat', sans-serif; background: var(--obsidian); color: var(--marble); overflow: hidden; }
+
+        .slide-container { height: 100vh; overflow-y: scroll; scroll-snap-type: y mandatory; }
+
+        .slide {
+            height: 100vh; width: 100vw;
+            display: flex; flex-direction: column; justify-content: center;
+            padding: 8%; position: relative;
+            background-size: cover; background-position: center;
+            scroll-snap-align: start;
+        }
+
+        .overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(11, 12, 16, 0.7); z-index: 1; }
+        .content { position: relative; z-index: 2; max-width: 1200px; }
+
+        .title-font { font-family: 'Cinzel', serif; }
+        h1 { font-size: 7rem; line-height: 1; margin-bottom: 1rem; text-transform: uppercase; color: var(--marble); }
+        .hero-num { font-size: 10rem; font-weight: 900; color: var(--sand); line-height: 0.9; }
+        
+        .statement { 
+            font-size: 3rem; font-weight: 300; line-height: 1.2; 
+            border-left: 8px solid var(--sand); padding-left: 2rem; margin-top: 2rem;
+        }
+
+        .reveal { opacity: 0; transform: translateY(40px); transition: all 1s ease; }
+        .revealed { opacity: 1; transform: translateY(0); }
+
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+
+        .lessons { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+        .lessons li { font-size: 1.2rem; background: rgba(255,255,255,0.05); padding: 1.5rem; border-top: 2px solid var(--sand); }
+        .lessons strong { display: block; color: var(--sand); font-family: 'Cinzel', serif; margin-bottom: 0.5rem; }
+
+    </style>
+</head>
+<body>
+
+    <div class="slide-container">
+        
+        <!-- Slide 1: Title -->
+        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1541888000438-66222b07e71c?auto=format&fit=crop&q=80&w=1600')">
+            <div class="overlay"></div>
+            <div class="content">
+                <p style="letter-spacing: 5px; color: var(--sand);">ASHGABAT KINETIC TRANSIT</p>
+                <h1 class="title-font">SilkRail<br>Gambit</h1>
+                <p class="statement">Checkmate the desert.</p>
+            </div>
+        </div>
+
+        <!-- Slide 2: The Problem -->
+        <div class="slide">
+            <div class="content">
+                <div class="grid-2">
+                    <div>
+                        <span class="hero-num reveal">40%</span>
+                        <h2 class="title-font reveal" style="font-size: 3rem; margin-top: 1rem;">Failure Rate</h2>
+                    </div>
+                    <div>
+                        <p class="statement reveal" style="border-color: #e74c3c;">Traditional rail cannot survive the Karakum. Shifting sands and warping tracks paralyze the Silk Road.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: The Solution -->
+        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=1600')">
+            <div class="overlay" style="background: rgba(11, 12, 16, 0.85);"></div>
+            <div class="content">
+                <p style="color: var(--sand); font-size: 1.5rem; letter-spacing: 2px;" class="reveal">THE SOLUTION</p>
+                <h1 class="title-font reveal" style="font-size: 5rem;">Grandmaster AI + Maglev</h1>
+                <p class="statement reveal">We treat the desert as a multi-track chessboard. AI predicts environmental hazards and dynamically routes frictionless freight pods.</p>
+            </div>
+        </div>
+
+        <!-- Slide 4: The Market -->
+        <div class="slide" style="background: var(--marble); color: var(--obsidian);">
+            <div class="content">
+                <p style="color: #45A29E; font-size: 1.5rem; letter-spacing: 2px; font-weight: 900;" class="reveal">THE OPPORTUNITY</p>
+                <span class="hero-num reveal" style="color: var(--obsidian); font-size: 14rem;">$8B</span>
+                <p class="statement reveal" style="border-color: var(--obsidian);">Annual value of unoptimized Trans-Caspian freight.</p>
+            </div>
+        </div>
+
+        <!-- Slide 5: Lessons Learned -->
+        <div class="slide">
+            <div class="content">
+                <h2 class="title-font" style="font-size: 4rem; margin-bottom: 3rem; color: var(--sand);">Lessons Learned</h2>
+                <ul class="lessons">
+                    <li class="reveal"><strong>Metaphor as Mechanic:</strong> Using 'Chess' not just as a theme, but as the literal algorithm for logistics routing created a powerful core concept.</li>
+                    <li class="reveal"><strong>Re-weighting Constraints:</strong> Prioritizing the Country (Turkmenistan) and Action (Chess) over the animals/fruit resulted in a much grander, infrastructure-scale idea.</li>
+                    <li class="reveal"><strong>Subtle Integration:</strong> The required elements (Lemon, Koala) worked best as in-world engineering jargon (bio-coolants, mechanical grippers) rather than focal points.</li>
+                    <li class="reveal"><strong>Aesthetic Shift:</strong> Moving from the rugged haptics of MagnoZest to the sleek, monolithic 'marble and obsidian' design perfectly mirrors the difference in product scale.</li>
+                    <li class="reveal"><strong>Scale of Ambition:</strong> A desert environment naturally invites massive infrastructure solutions when combined with high-tech concepts like Maglev.</li>
+                    <li class="reveal"><strong>Narrative Power:</strong> The image of a chess prodigy routing 400km/h trains across dunes immediately sells the vision to investors.</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) { entry.target.classList.add('revealed'); }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
